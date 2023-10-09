@@ -1,0 +1,72 @@
+.terminal-display {
+    width: 233px;
+    height: 89px;
+    margin: 21px auto;
+    border-radius: 13px;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    font-family: $mainFont1;
+
+    .text {
+        padding: 21px 13px;
+        text-align: center;
+        font-size: 21px;
+    }
+
+    .error {
+        color: #f00;
+    }
+}
+
+.cash-acceptor {
+    .cash-elem {
+        width: 204px;
+    }
+
+    .cash-form {
+        height: 34px;
+        margin: 21px auto 5px;
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+
+    .money-input {
+        flex-grow: 2;
+        box-sizing: border-box;
+        background-color: transparent;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .money-enter {
+        width: 34px;
+        background-color: $mainColor3;
+        color: #fff;
+    }
+
+    .cash-error {
+        margin: 0 auto;
+
+        p {
+            color: #f00;
+        }
+    }
+
+    .cash-return {
+        display: block;
+        margin: 21px auto;
+
+        button {
+            width: 100%;
+            height: 34px;
+            background-color: $mainColor3;
+            color: #fff;
+        }
+    }
+}

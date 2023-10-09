@@ -5,10 +5,10 @@ import Terminal from "./terminal/Terminal";
 const VendingMachine = (props) => {
     return (
         <div className="vending-machine">
-          <div className="vm-products">
+          <div className="products-wrap">
             <Products />
           </div>
-          <div className="vm-terminal">
+          <div className="terminal-wrap">
             <Terminal />
           </div>
         </div>

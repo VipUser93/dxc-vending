@@ -1,0 +1,23 @@
+.vending-machine {
+    display: flex;
+    background-color: $mainColor2;
+    border-radius: 21px;
+}
+
+.products-wrap {
+    width: 62%;
+    margin: 34px;
+    background-color: $mainColor1;
+    border: 3px solid $mainColor1;
+    border-radius: 13px;
+    font-family: $mainFont2;
+    overflow: hidden;
+}
+
+.terminal-wrap {
+    width: 38%;
+    margin: 34px;
+    background-color: $mainColor4;
+    border: 3px solid $mainColor1;
+    border-radius: 13px;
+}

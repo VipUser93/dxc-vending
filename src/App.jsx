@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import VendingMachine from './components/VendingMachine';
 
 import './styles/index.scss';
@@ -8,12 +7,12 @@ import './styles/index.scss';
 2. SCSS compiler
 3. readme -> VM coins -> 1, 2, 5, 10, 20, 50, 100, 500
 4. readme -> npx vite
+5. store cash in storage
+6. CHECK ALL FILES FOR COMMENTS (left some here and there)
 --- ----- --- 
 */
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>

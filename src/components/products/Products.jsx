@@ -1,39 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
-const Products = (props) => {
-    const products = [
-        {
-            id: "1",
-            type: "water",
-            price: 1
-        },
-        {
-            id: "2",
-            type: "orange juice",
-            price: 2
-        },
-        {
-            id: "3",
-            type: "waffles",
-            price: 1.50
-        },
-        {
-            id: "4",
-            type: "coca cola",
-            price: 1.60
-        }
-    ];
-    
+import { fetchAllProducts } from "../../app/productSlice";
+
+import Product from "./components/Product";
+
+const apiUrl = 'https://651d785d44e393af2d59dd05.mockapi.io/api/v1/products';
+
+const Products = () => {
+    const products = useSelector((state) => state.products);
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchAllProducts(apiUrl))
+    }, [dispatch])
+
+
     return (
-        <div>
-            {products.map(product => {
-                return (
-                    <div>
-                        <div>{product.type}</div>
-                        <div>{product.price}</div>
-                    </div>
-                )
-            })}
+        <div className="products">
+            <div className="products-holder">
+                {products?.data?.length > 0 && products?.data?.map((product, key) => 
+                    <Product product={product} key={key} />
+                )}
+            </div>
+            <div className="products-drop">
+                
+            </div>
         </div>
     )
 } 

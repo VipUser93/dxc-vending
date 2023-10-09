@@ -1,0 +1,20 @@
+// ======== Colors =========
+$mainColor1: #f5f5dc;
+$mainColor2: #B55D3D;
+$mainColor3: #453C3B;
+$mainColor4: #C16F62;
+
+// ======== Fonts ========
+@font-face {
+    font-family: "VT323";
+    src: url('./../assets/fonts/VT323-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Azbuki";
+    src: url('./../assets/fonts/Azbuki-Regular.woff') format('woff'),
+         url('./../assets/fonts/Azbuki-Regular.woff2') format('woff2');
+}
+
+$mainFont1: "VT323";
+$mainFont2: "Azbuki";
