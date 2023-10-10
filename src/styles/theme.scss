@@ -1,8 +1,10 @@
 // ======== Colors =========
-$mainColor1: #f5f5dc;
-$mainColor2: #B55D3D;
-$mainColor3: #453C3B;
-$mainColor4: #C16F62;
+$mainColor1: #f6f6f6;
+$mainColor2: #549aab;
+$mainColor3: #123740;
+$mainColor4: #b0d7e1;
+$mainColor5: #f1802d;
+$colorNegative: #f00;
 
 // ======== Fonts ========
 @font-face {
@@ -18,3 +20,10 @@ $mainColor4: #C16F62;
 
 $mainFont1: "VT323";
 $mainFont2: "Azbuki";
+
+
+$screenWidth1: 1280px;
+$screenWidth2: 860px;
+$screenWidth3: 740px;
+$screenWidth4: 510px;
+$screenMinimum: 360px;

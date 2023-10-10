@@ -2,6 +2,7 @@
     display: flex;
     background-color: $mainColor2;
     border-radius: 21px;
+    align-items: flex-start;
 }
 
 .products-wrap {
@@ -20,4 +21,17 @@
     background-color: $mainColor4;
     border: 3px solid $mainColor1;
     border-radius: 13px;
+}
+
+@media screen and (max-width: $screenWidth2) {
+    .products-wrap,
+    .terminal-wrap {
+        margin: 13px;
+    }
+}
+
+@media screen and (max-width: $screenWidth4) {
+    .products-wrap {
+        margin-right: 0;
+    }
 }

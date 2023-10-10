@@ -1,5 +1,41 @@
 #root {
-    max-width: 1280px;
+    max-width: $screenWidth1;
     margin: 0 auto;
     padding: 2rem;
+    font-family: $mainFont2;
+}
+
+.head {
+    width: 38%;
+    margin-left: 21px;
+    background-color: $mainColor5;
+    padding: 8px;
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+
+    h1 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: $screenWidth2) {
+    #root {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: $screenWidth3) {
+    .head {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: $screenWidth4) {
+    #root {
+        padding: 0.5rem;
+    }
 }

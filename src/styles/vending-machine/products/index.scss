@@ -63,3 +63,31 @@
         font-size: 18px;
     }
 }
+
+@media screen and (max-width: $screenWidth2) {
+    .products-holder {
+        .product-image,
+        .out-of-stock {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: $screenWidth4) {
+    .products-holder {
+        .product-image,
+        .out-of-stock {
+            width: 60px;
+            height: 60px;
+        }
+
+        .item-info {
+            margin: 3px;
+        }
+
+        .item-value {
+            font-size: 15px;
+        }
+    }
+}
